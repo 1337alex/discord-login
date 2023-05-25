@@ -66,7 +66,7 @@ html, body {
 }
 
 .textboxes input {
-    background-color: black;
+    background-color: rgb(30, 31, 34);
     color: rgb(181, 186, 193);
     font-family: Inconsolata;
     font-size: 20px;
@@ -76,14 +76,26 @@ html, body {
     border: 0px;
 }
 
-.textboxes a {
+.forgot-pass {
     margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.forgot-pass a {
     color: rgb(0, 168, 252);
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    color: rgb(0, 168, 252);
+    text-decoration: underline;
 }
 
 .login-button {
-    background-color: rgb(71, 82, 196);
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(80, 92, 219);
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -94,19 +106,48 @@ html, body {
     padding-bottom: 5px;
 }
 
+.login-button p {
+    color: white;
+    font-size: 18px;
+}
+
 .login-button:hover {
-    background-color: rgba(71, 82, 196, 0.7);
+    background-color: rgb(71, 82, 196);
     cursor: pointer;
+}
+
+.bottom-text {
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.need-help {
+    margin-right: 5px;
+}
+
+.need-help p {
+    /* border: 2px solid red; */
+    color: rgb(148, 155, 164);
+    font-size: 15px;
 }
 
 .register {
     /* border: 2px solid red; */
-    color: rgb(181, 186, 193);
-    text-align: left;
-    width: 100%;
+    /* width: 100%; */
+    margin-left: 0px;
 }
 
 .register a {
-    margin-top: 5px;
     color: rgb(0, 168, 252);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.register:hover {
+    color: rgb(0, 168, 252);
+    text-decoration: underline;
 }
